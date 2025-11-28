@@ -7,8 +7,8 @@
 ## Capturas
 
 <div align="center">
-  <img src="assets/img/captura1.png" alt="Captura 1" width="400"/>
-  <img src="assets/img/captura2.png" alt="Captura 2" width="400"/>
+  <img src="assets/img/Captura1.png" alt="Captura 1" width="400"/>
+  <img src="assets/img/Captura2.png" alt="Captura 2" width="400"/>
 </div>
 
 ## Descripción del Proyecto
