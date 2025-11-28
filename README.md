@@ -1,33 +1,40 @@
-# 📚 Libros Para Todos
+# Libros Para Todos
 
 **Tu biblioteca digital abierta, simple y accesible**
 
 ![Logo](https://github.com/diegoginard/Libros_para_todos/blob/main/assets/img/FrontBooks.png)
 
-## 🚀 Descripción del Proyecto
+## Capturas
+
+<div align="center">
+  <img src="assets/img/captura1.png" alt="Captura 1" width="400"/>
+  <img src="assets/img/captura2.png" alt="Captura 2" width="400"/>
+</div>
+
+## Descripción del Proyecto
 
 **Libros Para Todos** es una aplicación web que permite buscar, explorar y gestionar libros utilizando la API abierta de OpenLibrary. El objetivo principal es ofrecer una experiencia similar a un catálogo de streaming (estilo Netflix), pero centrado en libros.
 
-## 🎯 Características Principales
+## Características Principales
 
-### 🔍 **Búsqueda de Libros**
+### **Búsqueda de Libros**
 - Búsqueda por título, autor o palabra clave usando la API de OpenLibrary
 - Resultados en tiempo real con interfaz intuitiva
 
-### 📈 **Libros en Tendencia**
+### **Libros en Tendencia**
 - Grilla dinámica que muestra los títulos más leídos del momento
 - Actualización automática de contenido
 
-### 🎭 **Exploración por Género**
+### **Exploración por Género**
 - Selector de géneros literarios
 - Paginación estilo carrusel
 - Navegación intuitiva por categorías
 
-### 🌟 **Los Más Aclamados**
+### **Los Más Aclamados**
 - Sección dedicada a libros con mejor valoración
 - Destacados por premios literarios
 
-### 📘 **Página de Detalles**
+### **Página de Detalles**
 Al seleccionar un libro se muestra:
 - Portada del libro
 - Título completo
@@ -37,24 +44,24 @@ Al seleccionar un libro se muestra:
 - Libros relacionados del mismo autor
 - Botón para agregar/quitar de favoritos
 
-### ❤️ **Sistema de Favoritos**
+### **Sistema de Favoritos**
 - Disponible solo para usuarios logueados
 - Persistencia de datos en `localStorage`
 - Sección personal "Mis Favoritos"
 
-### 🔐 **Sistema de Autenticación**
+### **Sistema de Autenticación**
 - Registro de usuarios
 - Inicio de sesión seguro
 - Validación de formularios
 - Ocultación de funcionalidades según estado
 
-### 🎨 **Interfaz Moderna**
+### **Interfaz Moderna**
 - Diseño inspirado en plataformas de streaming
 - Tema oscuro predeterminado
 - Cards y animaciones con AOS.js
 - Diseño completamente responsive
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 | Tecnología | Uso |
 |------------|-----|
@@ -66,7 +73,7 @@ Al seleccionar un libro se muestra:
 | **AOS.js** | Animaciones al hacer scroll |
 | **FontAwesome** | Iconos y elementos visuales |
 
-## 📱 Compatibilidad
+## Compatibilidad
 
 - ✅ **Desktop** (Escritorio completo)
 - ✅ **Tablets** (Responsive design)
