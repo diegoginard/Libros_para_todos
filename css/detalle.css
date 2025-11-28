@@ -34,6 +34,24 @@
     box-shadow: 0 0 15px #000;
 }
 
+/* Botón agregar a favoritos */
+.btn-fav {
+    background-color: #e50914;
+    border: none;
+    padding: 10px 18px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.btn-fav:hover {
+    background-color: #b20710;
+}
+
+
 /* Textos */
 .detalle-textos {
     flex: 1;
