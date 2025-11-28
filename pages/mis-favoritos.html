@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Favoritos - FrontBooks</title>
 
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/mis-favoritos.css">
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
@@ -27,8 +27,7 @@
         </nav>
     </header>
 
-    <main class="main">
-        
+    <main class="favoritos-contenedor">
         
         <section class="favoritos-section">
             <h2 class="tituloSection">Mis Libros Favoritos</h2>
@@ -36,9 +35,10 @@
             <div id="favoritosContainer" class="peliculas">
                 <!-- JS inserta aquí los libros favoritos -->
             </div>
-        </section>
 
-        <button class="btn-volver" onclick="history.back()">⬅ Volver</button>
+        </section>
+        
+        <button class="btn-volver" id="btn-volver-fav" onclick="history.back()">⬅ Volver</button>
     </main>
 
     <footer class="footer">

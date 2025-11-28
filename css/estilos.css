@@ -242,17 +242,6 @@ html, body {
     border: 1px solid #222;
 }
 
-/* FAVORITOS */
-.favoritos-section {
-    padding: 2rem 1rem;
-}
-
-.mensaje-error {
-    color: #ccc;
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-}
 
 /* Tarjetas de libros (compatibles con el resto) */
 .libro {
@@ -323,40 +312,12 @@ html, body {
 }
 
 /* Botón volver */
-.volver {
-    display: inline-block;
-    margin-top: 15px;
-    color: #fff;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* =============================== */
-/*            DETALLE              */
-/* =============================== */
-
-.detalle-body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Contenedor principal */
-.detalle-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 120px auto 60px auto;
-    padding-bottom: 50px;
-}
-
-/* Botón volver */
 .btn-volver {
-    display: grid;
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
     padding: 8px 14px;
-    margin-bottom: 20px;
+    margin: 30px;
     cursor: pointer;
     border-radius: 4px;
     transition: .3s;
@@ -367,52 +328,6 @@ html, body {
     color: #000;
 }
 
-/* Layout de portada + información */
-.detalle-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: flex-start;
-    margin-bottom: 40px;
-}
-
-.detalle-portada {
-    width: 280px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #000;
-}
-
-/* Textos */
-.detalle-textos {
-    flex: 1;
-    min-width: 280px;
-}
-
-.detalle-textos h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.detalle-autores {
-    font-size: 18px;
-    color: #d4d4d4;
-    margin-bottom: 15px;
-}
-
-.detalle-autores span {
-    color: #6ab0ff;
-    cursor: pointer;
-}
-
-.detalle-autores span:hover {
-    text-decoration: underline;
-}
-
-.detalle-descripcion {
-    margin-top: 15px;
-    line-height: 1.5rem;
-    color: #ddd;
-}
 
 /* Botón favoritos */
 .btn-fav {
@@ -431,68 +346,5 @@ html, body {
     background-color: #b20710;
 }
 
-/* =============================== */
-/*        TRAILER SECTION          */
-/* =============================== */
 
-.trailer-section {
-    margin-top: 40px;
-}
-
-.trailer-section h2 {
-    margin-bottom: 15px;
-    font-size: 26px;
-}
-
-.trailer-frame {
-    width: 100%;
-    height: 380px;
-    border-radius: 10px;
-    border: none;
-}
-
-@media (max-width: 600px) {
-    .trailer-frame {
-        height: 240px;
-    }
-}
-
-/* =============================== */
-/*      LIBROS RELACIONADOS        */
-/* =============================== */
-
-.relacionados-section {
-    margin-top: 50px;
-}
-
-.relacionados-section h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
-}
-
-.relacionados-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 20px;
-}
-
-.relacionado-card {
-    cursor: pointer;
-    transition: .3s;
-}
-
-.relacionado-card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.relacionado-card:hover {
-    transform: scale(1.05);
-}
-
-.relacionado-card h4 {
-    font-size: 14px;
-    margin-top: 8px;
-    text-align: center;
-}
 

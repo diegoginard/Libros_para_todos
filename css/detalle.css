@@ -1,0 +1,68 @@
+/* =============================== */
+/*            DETALLE              */
+/* =============================== */
+
+@import url('/css/estilos.css');
+
+.detalle-body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor principal */
+.detalle-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 150px auto 60px auto;
+    padding-bottom: 50px;
+}
+
+
+/* Layout de portada + información */
+.detalle-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.detalle-portada {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+}
+
+/* Textos */
+.detalle-textos {
+    flex: 1;
+    min-width: 280px;
+}
+
+.detalle-textos h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.detalle-autores {
+    font-size: 18px;
+    color: #d4d4d4;
+    margin-bottom: 15px;
+}
+
+.detalle-autores span {
+    color: #6ab0ff;
+    cursor: pointer;
+}
+
+.detalle-autores span:hover {
+    text-decoration: underline;
+}
+
+.detalle-descripcion {
+    margin-top: 15px;
+    line-height: 1.5rem;
+    color: #ddd;
+}
+

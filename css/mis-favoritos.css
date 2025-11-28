@@ -1,0 +1,18 @@
+/* FAVORITOS */
+
+@import url('/css/estilos.css');
+
+.favoritos-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 150px auto 60px auto; /* Aumenté a 150px en lugar de 120px */
+    padding-bottom: 50px;
+}
+
+.mensaje-error {
+    color: #ccc;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
