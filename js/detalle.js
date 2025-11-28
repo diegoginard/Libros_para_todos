@@ -28,7 +28,7 @@ async function cargarDetalle() {
         if (data.covers && data.covers.length > 0) {
             portada.src = `https://covers.openlibrary.org/b/id/${data.covers[0]}-L.jpg`;
         } else {
-            portada.src = "/assets/img/placeholder-book.png";
+            portada.src = "../assets/img/placeholder-book.png";
         }
 
         // Título

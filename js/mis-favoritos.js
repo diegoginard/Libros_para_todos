@@ -32,7 +32,7 @@ function mostrarFavoritos() {
             <div class="libro" data-id="${libro.id}">
                 <img src="${libro.cover ? 
                     `https://covers.openlibrary.org/b/id/${libro.cover}-L.jpg` : 
-                    '/assets/img/placeholder-book.png'}"
+                    '../assets/img/placeholder-book.png'}"
                 >
                 <h4>${libro.title}</h4>
             </div>
@@ -47,7 +47,7 @@ function agregarEventosClick() {
     document.querySelectorAll(".libro").forEach(card => {
         card.addEventListener("click", () => {
             const id = card.getAttribute("data-id");
-            window.location.href = `/pages/detalle.html?id=${id}`;
+            window.location.href = `../pages/detalle.html?id=${id}`;
         });
     });
 }

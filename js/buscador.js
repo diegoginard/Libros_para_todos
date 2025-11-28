@@ -39,7 +39,7 @@ function activarNavegacion() {
     document.querySelectorAll(".libro").forEach(card => {
         card.addEventListener("click", () => {
             const id = card.getAttribute("data-id");
-            window.location.href = `./pages/detalle.html?id=${id}`;
+            window.location.href = `../pages/detalle.html?id=${id}`;
         });
     });
 }
