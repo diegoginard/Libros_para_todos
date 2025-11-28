@@ -38,6 +38,21 @@ function actualizarNavUsuario() {
 
 actualizarNavUsuario();
 
+// Mostrar/ocultar botón Favoritos según login
+const favoritosNav = document.getElementById("nav-favoritos");
+
+function actualizarFavoritosNav() {
+    const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
+
+    if (!usuario) {
+        favoritosNav.style.display = "none"; // OCULTAR si NO hay sesión
+    } else {
+        favoritosNav.style.display = "block"; // MOSTRAR si está logueado
+    }
+}
+
+actualizarFavoritosNav();
+
 // Menú hamburguesa
 document.getElementById("menu-toggle")?.addEventListener("click", () => {
     document.querySelector(".navegacion").classList.toggle("active");

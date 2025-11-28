@@ -16,8 +16,9 @@
                 <img src="/assets/img/FrontBooks.png" alt="FrontBooks">
             </a>
             <ul class="listaNav">
-                <li><a class="linkNav" href="/index.html#tendencias">Tendencias</a></li>
-                <li><a class="linkNav" href="/index.html#generos">Géneros</a></li>
+                <li class="listaItem" id="nav-favoritos">
+                    <a class="linkNav" href="/pages/mis-favoritos.html">Favoritos</a>
+                </li>
                 <li id="user-nav"></li>
             </ul>
         </nav>
@@ -49,7 +50,7 @@
                 <!-- JS inserta aquí -->
             </div>
         </section>
-
+        <button class="btn-volver" onclick="history.back()">⬅ Volver</button>
     </main>
 
     <script type="module" src="/js/usuario-nav.js"></script>
