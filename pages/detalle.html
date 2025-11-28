@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Libro - FrontBooks</title>
+
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body class="detalle-body">
+
+    <header class="header">
+        <nav class="navegacion">
+            <a class="logo" href="/index.html">
+                <img src="/assets/img/FrontBooks.png" alt="FrontBooks">
+            </a>
+            <ul class="listaNav">
+                <li><a class="linkNav" href="/index.html#tendencias">Tendencias</a></li>
+                <li><a class="linkNav" href="/index.html#generos">Géneros</a></li>
+                <li id="user-nav"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="detalle-container">
+
+        <button class="btn-volver" onclick="history.back()">⬅ Volver</button>
+
+        <div class="detalle-info">
+            <img id="detalle-portada" class="detalle-portada" src="" alt="Portada del libro">
+
+            <div class="detalle-textos">
+                <h1 id="detalle-titulo"></h1>
+                <h3 id="detalle-autores" class="detalle-autores"></h3>
+
+                <p><strong>Año:</strong> <span id="detalle-anio"></span></p>
+
+                <p class="detalle-descripcion" id="detalle-descripcion"></p>
+
+                <button id="btnFavorito" class="btn-fav">☆ Agregar a Favoritos</button>
+            </div>
+        </div>
+
+        <!-- LIBROS RELACIONADOS -->
+        <section class="relacionados-section">
+            <h2>Libros relacionados</h2>
+            <div id="relacionadosContainer" class="relacionados-grid">
+                <!-- JS inserta aquí -->
+            </div>
+        </section>
+
+    </main>
+
+    <script type="module" src="/js/usuario-nav.js"></script>
+    <script type="module" src="/js/detalle.js"></script>
+
+</body>
+</html>

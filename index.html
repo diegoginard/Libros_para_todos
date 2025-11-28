@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <title>Libros para todos</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navegacion">
+            <a class="logo" href="./index.html">
+                <img src="./assets/img/FrontBooks.png" alt="Logo FrontBooks">
+            </a>
+
+            <button class="btn-toggle-menu" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="listaNav">
+
+                <li class="listaItem"><a class="linkNav" href="#tendencias">Los Más Leidos</a></li>
+                <li class="listaItem"><a class="linkNav" href="#generos">Géneros</a></li>
+                <li class="listaItem"><a class="linkNav" href="/pages/mis-favoritos.html">Favoritos</a></li>
+
+                <!-- LOGIN / REGISTRO / USUARIO -->
+                <li class="listaItem" id="user-nav"></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main" class="main">
+
+        <!-- HERO -->
+        <section data-aos="zoom-in" class="sectionPrincipal">
+            <h1 class="tituloPrincipal">Todos tus libros favoritos<br>en un solo lugar</h1>
+            <h4 class="subtituloPrincipal">El catálogo digital más completo</h4>
+            <p class="cancela">Acceso desde cualquier dispositivo</p>
+
+            <!-- SOLO SE MUESTRA SI NO HAY USUARIO LOGUEADO -->
+            <a class="botonRegistrarse" href="./pages/register.html">Registrate</a>
+        </section>
+
+        <!-- BUSCADOR -->
+        <section data-aos="fade-up" class="buscadorPrincipal">
+            <div class="container-tituloSection">
+                <h2 class="tituloSection">¿Qué libro estás buscando?</h2>
+            </div>
+
+            <form class="buscadorPeliculas" id="formBusqueda">
+                <input class="inputBuscador" type="text" id="buscar" placeholder="Buscar libro...">
+                <input class="botonBuscador" type="submit" value="Buscar">
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- TENDENCIAS -->
+        <section id="tendencias" class="tendencias" data-aos="fade-up">
+            <h3 class="tituloSection">Los más leidos</h3>
+
+            <div class="peliculas" id="tendenciasContainer"></div>
+
+            <button id="botonAnteriorTendencias" class="boton anterior">Anterior</button>
+            <button id="botonSiguienteTendencias" class="boton siguiente">Siguiente</button>
+        </section>
+
+        <hr id="separador">
+
+        <!-- GÉNEROS -->
+        <section id="generos" class="tendencias" data-aos="fade-up">
+            <h3 class="tituloSection">Explorar por género</h3>
+
+            <!-- Selector de Géneros -->
+            <div class="selector-genero">
+                <label for="selectGenero">Seleccioná un género:</label>
+                <select id="selectGenero">
+                    <option value="Fiction">Fiction</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="History">History</option>
+                    <option value="Science">Science</option>
+                    <option value="Technology">Technology</option>
+                </select>
+            </div>
+
+            <div class="peliculas" id="generosContainer">
+                <!-- JS agrega los libros -->
+            </div>
+
+            <button id="botonAnteriorGeneros" class="boton anterior">Anterior</button>
+            <button id="botonSiguienteGeneros" class="boton siguiente">Siguiente</button>
+        </section>
+
+        <hr>
+
+        <!-- ACLAMADOS -->
+        <section class="peliculasAclamadas" data-aos="fade-up">
+            <h3 class="tituloSection">Los más aclamados</h3>
+
+            <div class="aclamadas" id="aclamadasContainer"></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav">Ayuda</a></li>
+            </ul>
+        </nav>
+
+        <a href="#main" class="flechaArriba">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="Ir arriba">
+        </a>
+
+        <p>Proyecto realizado por Diego Ginard © 2025</p>
+    </footer>
+
+    <!-- ICONOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+
+    <!-- Animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- Scripts principales -->
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/usuario-nav.js"></script>
+
+</body>
+
+</html>

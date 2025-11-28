@@ -1,0 +1,498 @@
+/* ============================================================
+   RESET GENERAL
+============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* ============================================================
+   HEADER
+============================================================ */
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.listaNav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.linkNav {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .2s;
+}
+
+.linkNav:hover {
+    color: #e50914;
+}
+
+/* Botón hamburguesa */
+.btn-toggle-menu {
+    display: none;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+}
+
+/* ============================================================
+   HERO (pantalla principal)
+============================================================ */
+.sectionPrincipal {
+    height: 80vh;
+    padding-top: 150px;
+    text-align: center;
+    background: url("../assets/img/hero-books.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tituloPrincipal {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.subtituloPrincipal {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.cancela {
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+.botonRegistrarse {
+    display: inline-block;
+    margin-top: 20px;
+    background: #e50914;
+    padding: 12px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.botonRegistrarse:hover {
+    background: #b00710;
+}
+
+/* ============================================================
+   BUSCADOR
+============================================================ */
+.buscadorPrincipal {
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.inputBuscador {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botonBuscador {
+    padding: 10px 20px;
+    border: none;
+    background: #e50914;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.botonBuscador:hover {
+    background: #b00710;
+}
+
+/* ============================================================
+   SECCIONES
+============================================================ */
+.section {
+    padding: 60px 20px;
+}
+
+.tituloSection {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* ============================================================
+   GRILLA DE LIBROS (películas)
+============================================================ */
+.peliculas,
+.aclamadas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 25px;
+}
+
+.libro {
+    text-align: center;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.libro:hover {
+    transform: scale(1.1);
+}
+
+.libro img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #111;
+}
+
+.libro h4 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* ============================================================
+   BOTONES ANTERIOR / SIGUIENTE
+============================================================ */
+.boton {
+    background: #e50914;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background: #b00710;
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    background: #111;
+    border-top: 1px solid #222;
+}
+
+.footer .navegacion .listaNav {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer img {
+    width: 40px;
+    margin-top: 10px;
+}
+
+/* ============================================================
+   LOGIN Y REGISTER
+============================================================ */
+.login-body, .register-body {
+    background: #000;
+}
+
+.login-container,
+.register-container {
+    background: #111;
+    padding: 40px;
+    margin: 120px auto;
+    width: 380px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #000;
+    border: 1px solid #222;
+}
+
+/* FAVORITOS */
+.favoritos-section {
+    padding: 2rem 1rem;
+}
+
+.mensaje-error {
+    color: #ccc;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Tarjetas de libros (compatibles con el resto) */
+.libro {
+    width: 180px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.libro img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.libro h4 {
+    margin-top: .5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.input-group {
+    text-align: left;
+    margin: 15px 0;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    background: #222;
+    color: white;
+}
+
+.btn-login,
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #e50914;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+    background: #b00710;
+}
+
+.login-register-text,
+.register-login-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-register-text a,
+.register-login-text a {
+    color: #e50914;
+}
+
+/* Botón volver */
+.volver {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* =============================== */
+/*            DETALLE              */
+/* =============================== */
+
+.detalle-body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor principal */
+.detalle-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 60px auto;
+    padding-bottom: 50px;
+}
+
+/* Botón volver */
+.btn-volver {
+    display: grid;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.btn-volver:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Layout de portada + información */
+.detalle-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.detalle-portada {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+}
+
+/* Textos */
+.detalle-textos {
+    flex: 1;
+    min-width: 280px;
+}
+
+.detalle-textos h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.detalle-autores {
+    font-size: 18px;
+    color: #d4d4d4;
+    margin-bottom: 15px;
+}
+
+.detalle-autores span {
+    color: #6ab0ff;
+    cursor: pointer;
+}
+
+.detalle-autores span:hover {
+    text-decoration: underline;
+}
+
+.detalle-descripcion {
+    margin-top: 15px;
+    line-height: 1.5rem;
+    color: #ddd;
+}
+
+/* Botón favoritos */
+.btn-fav {
+    background-color: #e50914;
+    border: none;
+    padding: 10px 18px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.btn-fav:hover {
+    background-color: #b20710;
+}
+
+/* =============================== */
+/*        TRAILER SECTION          */
+/* =============================== */
+
+.trailer-section {
+    margin-top: 40px;
+}
+
+.trailer-section h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.trailer-frame {
+    width: 100%;
+    height: 380px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .trailer-frame {
+        height: 240px;
+    }
+}
+
+/* =============================== */
+/*      LIBROS RELACIONADOS        */
+/* =============================== */
+
+.relacionados-section {
+    margin-top: 50px;
+}
+
+.relacionados-section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.relacionados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+}
+
+.relacionado-card {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.relacionado-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.relacionado-card:hover {
+    transform: scale(1.05);
+}
+
+.relacionado-card h4 {
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: center;
+}
+

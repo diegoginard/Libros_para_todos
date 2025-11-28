@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - FrontBooks</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body class="login-body">
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+
+        <form class="login-form" id="formLogin">
+            
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" id="email" required placeholder="ejemplo@gmail.com">
+            </div>
+
+            <div class="input-group">
+                <label>Contraseña</label>
+                <input type="password" id="password" required placeholder="********">
+            </div>
+
+            <button type="submit" class="btn-login">Ingresar</button>
+
+            <p class="login-register-text">
+                ¿No tenés cuenta?  
+                <a href="/pages/register.html">Registrate acá</a>
+            </p>
+
+            <!-- ⭐ BOTÓN VOLVER AL INICIO ⭐ -->
+            <p class="volver-inicio">
+                <a href="/index.html" class="btn-volver">⬅ Volver al Inicio</a>
+            </p>
+
+        </form>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Favoritos - FrontBooks</title>
+
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header class="header">
+        <nav class="navegacion">
+            <a class="logo" href="/index.html">
+                <img src="/assets/img/FrontBooks.png" alt="Logo FrontBooks">
+            </a>
+
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="/index.html#tendencias">Tendencias</a></li>
+                <li class="listaItem"><a class="linkNav" href="/index.html#generos">Géneros</a></li>
+                <li class="listaItem"><a class="linkNav" href="/pages/mis-favoritos.html">Favoritos</a></li>
+
+                <!-- Usuario dinámico -->
+                <li class="listaItem" id="user-nav"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="favoritos-section">
+            <h2 class="tituloSection">Mis Libros Favoritos</h2>
+
+            <div id="favoritosContainer" class="peliculas">
+                <!-- JS inserta aquí los libros favoritos -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>FrontBooks © 2025</p>
+    </footer>
+
+    <script type="module" src="/js/mis-favoritos.js"></script>
+    <script type="module" src="/js/usuario-nav.js"></script>
+
+</body>
+</html>
