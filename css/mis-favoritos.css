@@ -1,6 +1,6 @@
 /* FAVORITOS */
 
-@import url('/css/estilos.css');
+@import url('./css/estilos.css');
 
 .favoritos-contenedor {
     width: 90%;
