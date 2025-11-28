@@ -1,0 +1,44 @@
+/* ============================================================
+   LOGIN Y REGISTER
+============================================================ */
+
+@import url('estilos.css');
+
+.login-body, .register-body {
+    background: #000;
+}
+
+.login-container,
+.register-container {
+    background: #111;
+    padding: 40px;
+    margin: 120px auto;
+    width: 380px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #000;
+    border: 1px solid #222;
+}
+
+.btn-login,
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #e50914;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+    background: #b00710;
+}
+
+.boton-volver-container {
+    text-align: center;
+    margin-top: 20px;
+}
