@@ -328,7 +328,11 @@ html, body {
     color: #000;
 }
 
-
-
-
-
+.flechaArriba{
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+}
