@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Libro - FrontBooks</title>
 
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body class="detalle-body">
 
     <header class="header">
         <nav class="navegacion">
-            <a class="logo" href="/index.html">
-                <img src="/assets/img/FrontBooks.png" alt="FrontBooks">
+            <a class="logo" href="../index.html">
+                <img src="../assets/img/FrontBooks.png" alt="FrontBooks">
             </a>
             <ul class="listaNav">
                 <li class="listaItem" id="nav-favoritos">
-                    <a class="linkNav" href="/pages/mis-favoritos.html">Favoritos</a>
+                    <a class="linkNav" href="./mis-favoritos.html">Favoritos</a>
                 </li>
                 <li id="user-nav"></li>
             </ul>
@@ -41,6 +41,8 @@
             </div>
         </div>
 
+        <button class="btn-volver" onclick="history.back()">⬅ Volver</button>
+
         <!-- LIBROS RELACIONADOS -->
         <section class="relacionados-section">
             <h2>Libros relacionados</h2>
@@ -48,11 +50,11 @@
                 <!-- JS inserta aquí -->
             </div>
         </section>
-        <button class="btn-volver" onclick="history.back()">⬅ Volver</button>
+        
     </main>
 
-    <script type="module" src="/js/usuario-nav.js"></script>
-    <script type="module" src="/js/detalle.js"></script>
+    <script type="module" src="../js/usuario-nav.js"></script>
+    <script type="module" src="../js/detalle.js"></script>
 
 </body>
 </html>
