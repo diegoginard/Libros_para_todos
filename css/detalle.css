@@ -2,7 +2,7 @@
 /*            DETALLE              */
 /* =============================== */
 
-@import url('./css/estilos.css');
+@import url('estilos.css');
 
 .detalle-body {
     background-color: #000;
