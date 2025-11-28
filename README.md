@@ -2,7 +2,7 @@
 
 **Tu biblioteca digital abierta, simple y accesible**
 
-![Logo](https://i.imgur.com/zy3Qk4r.png)
+![Logo](https://github.com/diegoginard/Libros_para_todos/assets/img/FrontBooks.png)
 
 ## 🚀 Descripción del Proyecto
 
