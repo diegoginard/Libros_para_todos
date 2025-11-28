@@ -22,12 +22,12 @@ function actualizarNavUsuario() {
 
     // Mostrar saludo + logout
     userNav.innerHTML = `
-        <span class="linkNav">Hola, ${usuario.nombre}</span>
-        <button id="logout-btn" class="linkNav" 
-            style="background:none;border:none;color:white;cursor:pointer;">
-            Cerrar sesión
-        </button>
-    `;
+       <span class="linkNav">Hola, ${usuario.nombre}</span>
+       <button id="logout-btn" class="linkNav" 
+           style="background:none; border:none; color:white; cursor:pointer; margin-left: 15px;">
+           Cerrar sesión
+       </button>
+   `;
 
     // Evento para cerrar sesión
     document.getElementById("logout-btn").addEventListener("click", () => {
